@@ -11,7 +11,7 @@ class AddBook extends Component {
 
 
   static defaultProps = {
-    subjects: ['N/A', 'Engineering', 'Math', 'History', 'Chemistry']
+    subjects: ['N/A', 'Engineering', 'Math', 'History', 'Chemistry', 'Childrens Book']
   }
 
   handleSubmit(e){
