@@ -76,7 +76,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        Welcome to EcoSpartan
+        <h2>Welcome to EcoSpartan!</h2>
         <AddBook addBook={this.handleAddBook.bind(this)} />
         <NewListing newListing={this.handleAddListing.bind(this)} />
         <Listing listings={this.state.listings} onDelete={this.handleDeleteListing.bind(this)} />
