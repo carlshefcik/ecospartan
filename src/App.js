@@ -6,6 +6,7 @@ import Book from './Components/Book';
 import AddBook from './Components/AddBook';
 import NewListing from './Components/NewListing';
 import Listing from './Components/Listing';
+import Search from './Components/Search/Search';
 
 
 class App extends Component {
@@ -77,6 +78,8 @@ class App extends Component {
     return (
       <div className="App">
         <h2>Welcome to EcoSpartan!</h2>
+        <Search search={this.state.class} />
+
         <AddBook addBook={this.handleAddBook.bind(this)} />
         <NewListing newListing={this.handleAddListing.bind(this)} />
         <Listing listings={this.state.listings} onDelete={this.handleDeleteListing.bind(this)} />

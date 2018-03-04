@@ -1,23 +1,23 @@
 import React, { Component } from 'react';
 import uuid from 'uuid';
 
-class NewListing extends Component {
+class ClassesSearch extends Component {
   constructor(){
     super();
     this.state = {
-      newListing:{}
+      newBook:{}
     }
   }
 
   static defaultProps = {
-    book: [
-      '',
-      'Software Engineering 1',
-      'Applied Probability',
-      'Discrete Mathematics',
-      'History of America',
-      'Intro to Biology',
-      'Big Java'
+    classes: [
+      'AAS',
+      'SE',
+      'CMPE',
+      'CS',
+      'MATH',
+      'BIO',
+      'CHEM'
     ],
     condition: [ '', '1', '2', '3', '4', '5' ],
     edition: [ '', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12' ]
@@ -25,7 +25,7 @@ class NewListing extends Component {
   }
 
   handleSubmit(e){
-    if((this.refs.email.value === '') || (this.refs.book.value === '') || (this.refs.price.value === '') || (this.refs.edition.value === '')){
+    if((this.refs.email.value === '')){
       alert('All entries must be filled');
     } else {
       this.setState({newListing:{
@@ -44,8 +44,8 @@ class NewListing extends Component {
   }
 
   render() {
-    let bookOptions = this.props.book.map(book => {
-      return <option key={book} value={book}>{book}</option>
+    let classesOptions = this.props.classes.map(classes => {
+      return <option key={classes} value={classes}>{classes}</option>
     });
 
     let conditionOptions = this.props.condition.map(condition => {
@@ -58,12 +58,12 @@ class NewListing extends Component {
 
     return (
       <div>
-      <h3>New Listing</h3>
+      <h3>Class Search</h3>
       <form onSubmit={this.handleSubmit.bind(this)}>
         <div>
-        <label>Book</label><br />
-        <select ref="book">
-          {bookOptions}
+        <label>Class</label><br />
+        <select ref="classes">
+          {classesOptions}
         </select>
         </div>
 
@@ -99,4 +99,4 @@ class NewListing extends Component {
   }
 }
 
-export default NewListing;
+export default ClassesSearch;
