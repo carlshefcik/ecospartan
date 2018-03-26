@@ -1,0 +1,40 @@
+/* DEBUGGING */
+/* * {
+  box-sizing: border-box;
+  border-color: red;
+  border-style: dotted;
+  border-width: 1px;
+} */
+
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+}
+
+.App {
+  text-align: center;
+}
+
+.Header {
+  padding: 200px;
+  background-color: #bcdcd3;
+  font-family: system-ui;
+}
+
+.Header h4 {
+  padding-top: 50px;
+}
+
+.Header h2 {
+  font-size: 40px;
+}
+
+.Header .Small {
+  font-size: 30px;
+}
+
+h2 {
+  color: black;
+  margin: 0px;
+}

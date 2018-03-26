@@ -9,6 +9,7 @@ import Listing from './Components/Listing';
 import Search from './Components/Search/Search';
 
 
+
 class App extends Component {
   constructor(){
     super();
@@ -74,10 +75,18 @@ class App extends Component {
     this.setState({listings:listings});
   }
 
+
+
   render() {
     return (
       <div className="App">
-        <h2>Welcome to EcoSpartan!</h2>
+        <div className="Header">
+          <h2>Welcome</h2>
+          <h2 className="Small">to</h2>
+          <h2>EcoSpartan</h2>
+          <h4>Buy, Sell, and Exchange Books</h4>
+        </div>
+
         <Search search={this.state.class} />
 
         <AddBook addBook={this.handleAddBook.bind(this)} />
