@@ -40,21 +40,21 @@ class AddBook extends Component {
       <div>
       <h3>Add Book</h3>
       <form onSubmit={this.handleSubmit.bind(this)}>
-        <div>
-        <label>Title</label><br />
-        <input type="text" ref="title" />
+        <div className="Title">
+         <label>Title</label><br />
+         <input type="text" ref="title" />
+        </div>
+        <div className="Title">
+         <label>Author</label><br />
+         <input type="text" ref="author" />
+        </div>
+        <div className="Title">
+         <label>ISBN</label><br />
+         <input type="text" ref="isbn" />
         </div>
         <div>
-        <label>Author</label><br />
-        <input type="text" ref="author" />
-        </div>
-        <div>
-        <label>ISBN</label><br />
-        <input type="text" ref="isbn" />
-        </div>
-        <div>
-        <label>Subject</label><br />
-        <select ref="subject">
+         <label>Subject</label><br />
+         <select ref="subject">
           {subjectOptions}
         </select>
         </div>
