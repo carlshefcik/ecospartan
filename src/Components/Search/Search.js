@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ClassesSearch from './ClassesSearch';
 import SubjectSearch from './SubjectSearch';
 
+
 class Search extends Component {
 
   render() {
@@ -21,6 +22,10 @@ class Search extends Component {
     return (
       <div className="Search">
         <h3>Search For a Book</h3>
+        <input type="text"/>
+        <br/>
+        <br/>
+        <button className='button'>Search</button>
 
       </div>
     );

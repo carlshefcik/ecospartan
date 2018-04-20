@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
 import uuid from 'uuid';
-
 import Book from './Components/Book';
 import AddBook from './Components/AddBook';
 import NewListing from './Components/NewListing';
 import Listing from './Components/Listing';
 import Search from './Components/Search/Search';
+import logo from './Ecospartanlogo.png';
 
 
 
@@ -85,6 +85,11 @@ class App extends Component {
           <h2 className="Small">to</h2>
           <h2>EcoSpartan</h2>
           <h4>Buy, Sell, and Exchange Books</h4>
+          <img src={"https://preview.freelogodesign.org/?lang=EN&logo=99a9ecd9-ddff-40d1-a46a-e244bd9b4a0e&name=Ecospartan"}
+           alt="Applogo" />
+           <br/>
+           <br/>
+          <button className="button">Get Started</button>
         </div>
 
         <Search search={this.state.class} />
