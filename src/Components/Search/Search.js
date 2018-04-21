@@ -22,10 +22,24 @@ class Search extends Component {
     return (
       <div className="Search">
         <h3>Search For a Book</h3>
-        <input type="text"/>
-        <br/>
-        <br/>
-        <button className='button'>Search</button>
+        <div className='Search-types'>
+          <div className ='By-Author'>
+            <label>By Author</label>
+            <input type="text"/>
+          </div>
+          <br/>
+          <div className ='By-Title'>
+            <label>By Titile</label>
+            <input type="text"/>
+          </div>
+          <br/>
+            <div className ='By-Class'>
+              <label>By Class</label>
+              <input type="text"/>
+            </div>
+            <br/>
+        </div>
+          <button className='button'>Search</button>
 
       </div>
     );
